@@ -8,7 +8,7 @@ use MedHelp\Armazenador\Doenca;
 
       return new Doenca();
 
-    };
+    }
     public function informarSobreADoenca(){
         return 'texto';
     }

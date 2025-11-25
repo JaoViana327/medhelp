@@ -17,7 +17,7 @@ class DesenvolvedorTest extends TestCase
         
         $desenvolvedor->nomeDaDoenca = 'Variola';
         $desenvolvedor->nomeDoPaciente = 'Joao';
-        $desenvolvedor->nomeDoMedico = 'Satoru_Gojo';
+        $desenvolvedor->nomeDoMedico = 'Satoru_Gojo';        
         $desenvolvedor->informacoesSobreADoenca = 'Perigosa';
         
         $this->assertEquals('Variola',$desenvolvedor->nomeDaDoenca);
@@ -25,8 +25,8 @@ class DesenvolvedorTest extends TestCase
         $this->assertEquals('Satoru_Gojo',$desenvolvedor->nomeDoMedico);
         $this->assertEquals('Perigosa',$desenvolvedor->informacoesSobreADoenca);
 
-        $this->assertEquals('Texto',$desenvolvedor->escreverSobreADoenca());
-        $this->assertEquals($nomeDoMedico,$desenvolvedor->indicarMedicos());
+        $this->assertEquals('texto',$desenvolvedor->escreverSobreADoenca());
+        $this->assertEquals($desenvolvedor->nomeDoMedico,$desenvolvedor->indicarMedicos());
 
 
     }

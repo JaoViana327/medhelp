@@ -20,7 +20,7 @@ class DoencaTest extends TestCase
         $this->assertEquals('Variola',$doenca->nome);
 
         $this->assertEquals(null,$doenca->armazenarDadosNoBancoDeDados());
-        $this->assertEquals(null,$doenca->pesquisar(string $nome));
+        $this->assertEquals(null,$doenca->pesquisar($doenca->nome));
         
     }
 }

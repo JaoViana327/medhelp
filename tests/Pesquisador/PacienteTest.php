@@ -5,6 +5,7 @@ namespace tests\Paciente;
 use PHPUnit\Framework\TestCase;
 use MedHelp\Pesquisador\Paciente;
 use PHPUnit\Framework\Attributes\CoversClass;
+use MedHelp\Armazenador\Doenca;
 
 #[CoversClass(Paciente::class)]
 

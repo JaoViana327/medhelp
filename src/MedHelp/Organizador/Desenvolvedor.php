@@ -2,15 +2,15 @@
 namespace MedHelp\Organizador;
 
 class Desenvolvedor{
-    public $nomeDaDoenca:string;
-    public $nomeDoPaciente:string;
-    public $nomeDoMedico:string;
-    public $informacoesSobreADoenca:string;
+    public string $nomeDaDoenca;
+    public string $nomeDoPaciente;
+    public string $nomeDoMedico;
+    public string $informacoesSobreADoenca;
 
     public function escreverSobreADoenca(){
         return 'texto';
-    };
+    }
     public function indicarMedicos():string{
-        return $nomeDoMedico;
-    };
+        return $this->nomeDoMedico;
+    }
 }
